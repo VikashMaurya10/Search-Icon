@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: gray;
+}
+
+.searchIcon-for-mobile {
+    position: relative;
+    height: 52px;
+    width: 52px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.searchIcon-for-mobile::after {
+    position: absolute;
+content: '';
+height: 23px;
+width: 23px;
+bottom: 25%;
+left: 19%;
+border: 4px solid black;
+border-radius: 50%;
+}
+
+.searchIcon-for-mobile::before {
+    position: absolute;
+    content: '';
+    height: 11.6px;
+    width: 5px;
+    background: black;
+    border-radius: 39px;
+    right: 11px;
+    bottom: 6px;
+    transform: skewX(40deg);
+}
